@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #3e1394;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #3e1394;
+    --foreground: #ededed;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeZoom {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeLeft {
+  0% { opacity: 0; transform: translateX(-40px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeRight {
+  0% { opacity: 0; transform: translateX(40px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeUpSoft {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up { animation: fadeUp 1s ease-out forwards; }
+.animate-fade-zoom { animation: fadeZoom 1s ease-out forwards; }
+.animate-fade-left { animation: fadeLeft 1s ease-out forwards; }
+.animate-fade-right { animation: fadeRight 1s ease-out forwards; }
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Titan One, Helvetica, sans-serif;
+}
+
+@layer base {
+  /* Scrollbar Glass */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(124,77,255,0.45);
+    backdrop-filter: blur(6px);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: yellow;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(124,77,255,0.45);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
+}
