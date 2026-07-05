@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/nfts/:path*",
+      "destination": "https://vecelpath/nfts/:path*"
+    },
+    {
+      "source": "/metadata/:path*",
+      "destination": "https://vecelpath/metadata/:path*"
+    },
+    {
+      "source": "/assets/glb-files/:path*",
+      "destination": "/api/glb/:path*"
+    },
+    {
+      "source": "/assets/mml-files/:path*",
+      "destination": "https://vecelpath/assets/mml-files/:path*"
+    }
+  ]
+}
