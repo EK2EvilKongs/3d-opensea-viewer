@@ -1,0 +1,15 @@
+{
+  "name": "Barlog",
+  "description": "Chaos Heroes is a legendary NFT collection forged in the heart of chaos. Each hero carries unique traits, mysterious powers, and a destiny shaped by endless battles across fractured realms. From ancient auras to corrupted eyes and powerful bodies, every Chaos Hero is a symbol of strength, rebellion and survival in a collapsing universe.",
+  "image": "https://ahg3rwwgyllpeg9a.public.blob.vercel-storage.com/nfts/1.png",
+  "animation_url": "https://apedata2.goblinsaga.xyz/viewer/1",
+  "mml": "https://apedata2.goblinsaga.xyz/assets/mml-files/Barlog.mml",
+  "edition": 1,
+  "dna": "94b42804e822d7d0b2268e33e16851a3c7491552",
+  "attributes": [
+    {
+      "trait_type": "1/1",
+      "value": "Barlog"
+    }
+  ]
+}
